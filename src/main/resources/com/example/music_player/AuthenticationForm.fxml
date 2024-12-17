@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="570.0" prefWidth="916.0" style="-fx-background-color: SlateGrey;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.music_player.AuthenticationFormController">
+   <children>
+      <AnchorPane prefHeight="615.0" prefWidth="420.0">
+         <children>
+            <Separator layoutX="416.0" layoutY="118.0" orientation="VERTICAL" prefHeight="367.0" prefWidth="6.0" style="-fx-background-color: Gray;" />
+            <ImageView fitHeight="288.0" fitWidth="293.0" layoutX="63.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../icons/cassette.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="96.0" layoutY="376.0" prefHeight="25.0" prefWidth="232.0" text="&lt;--- Feel  The  Beat  Within ---&gt;" textFill="#070707">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="60.0" layoutY="324.0" prefHeight="64.0" prefWidth="303.0" text="CASSETTE MUSIC PLAYER" textFill="#070707">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="118.0" layoutY="545.0" prefHeight="37.0" prefWidth="179.0" text="Developed By @Oparthib" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="179.0" layoutY="574.0" prefHeight="25.0" prefWidth="84.0" text="2107037" textFill="#070707">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="LogIn_AnchorPane" layoutX="422.0" prefHeight="625.0" prefWidth="508.0">
+         <children>
+            <TextField fx:id="LogIn_username" layoutX="50.0" layoutY="135.0" prefHeight="49.0" prefWidth="353.0" promptText="enter username">
+               <font>
+                  <Font name="System Italic" size="16.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="LogIn_password" layoutX="50.0" layoutY="232.0" prefHeight="49.0" prefWidth="353.0" promptText="enter password">
+               <font>
+                  <Font name="System Italic" size="16.0" />
+               </font>
+            </PasswordField>
+            <Label layoutX="50.0" layoutY="98.0" prefHeight="37.0" prefWidth="131.0" text="Username" textFill="#070707">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="50.0" layoutY="195.0" prefHeight="37.0" prefWidth="131.0" text="Password" textFill="#070707">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="LogIn_logInBtn" layoutX="50.0" layoutY="336.0" mnemonicParsing="false" onAction="#LogIn_logInBtnOnClick" prefHeight="49.0" prefWidth="353.0" style="-fx-background-color: SpringGreen;" text="Log In" textFill="#070707">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Hyperlink fx:id="LogIn_forgotPasswordHyperLink" layoutX="159.0" layoutY="413.0" onAction="#LogIn_forgotPasswordHyperLinkOnClick" prefHeight="49.0" prefWidth="164.0" text="Forgot Password?" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Hyperlink>
+            <Label layoutX="53.0" layoutY="469.0" prefHeight="37.0" prefWidth="179.0" text="Don't have an account ? " textFill="#070707">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Label>
+            <Hyperlink fx:id="LogIn_createNewAccHyperLink" layoutX="241.0" layoutY="469.0" onAction="#LogIn_createNewAccHyperLinkOnClick" prefHeight="37.0" prefWidth="185.0" text="Create a new account" textFill="#f5f5f5">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Hyperlink>
+            <Label fx:id="LogIn_invalidUsernameOrPassLabel" layoutX="121.0" layoutY="292.0" prefHeight="21.0" prefWidth="207.0" text="Invalid username or password !" visible="false">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="SignUp_AnchorPane" layoutX="424.0" prefHeight="625.0" prefWidth="508.0" visible="false">
+         <children>
+            <TextField fx:id="SignUp_username" layoutX="48.0" layoutY="136.0" prefHeight="49.0" prefWidth="353.0" promptText="enter  username">
+               <font>
+                  <Font name="System Italic" size="16.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="SignUp_password" layoutX="48.0" layoutY="230.0" prefHeight="49.0" prefWidth="353.0" promptText="enter  password">
+               <font>
+                  <Font name="System Italic" size="16.0" />
+               </font>
+            </PasswordField>
+            <Label layoutX="48.0" layoutY="99.0" prefHeight="37.0" prefWidth="131.0" text="Username" textFill="#070707">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="48.0" layoutY="193.0" prefHeight="37.0" prefWidth="131.0" text="Password" textFill="#070707">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="SignUp_signUpBtn" layoutX="48.0" layoutY="436.0" mnemonicParsing="false" onAction="#SignUp_signUpBtnOnClick" prefHeight="49.0" prefWidth="353.0" style="-fx-background-color: SpringGreen;" text="Sign Up" textFill="#070707">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Label layoutX="51.0" layoutY="499.0" prefHeight="37.0" prefWidth="185.0" text="Already have an account ?" textFill="#070707">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Label>
+            <Hyperlink fx:id="SignUp_logInToYourAccHyperLink" layoutX="242.0" layoutY="499.0" onAction="#SignUp_logInToYourAccHyperLink" prefHeight="37.0" prefWidth="194.0" text="LogIn to your account" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Hyperlink>
+            <Label layoutX="48.0" layoutY="293.0" text="Confirm Password" textFill="#070707">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="SignUp_confirmPassword" layoutX="48.0" layoutY="323.0" prefHeight="49.0" prefWidth="353.0" promptText="confirm password">
+               <font>
+                  <Font name="System Italic" size="16.0" />
+               </font>
+            </PasswordField>
+            <Label fx:id="SignUp_passwordsDoNotMatchLabel" layoutX="143.0" layoutY="383.0" prefHeight="37.0" prefWidth="164.0" text="Passwords do not match" visible="false">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="UpdatePass_AnchorPane" layoutX="417.0" prefHeight="642.0" prefWidth="518.0" visible="false">
+         <children>
+            <TextField fx:id="UpdatePass_username" layoutX="50.0" layoutY="123.0" prefHeight="49.0" prefWidth="353.0" promptText="enter username">
+               <font>
+                  <Font name="System Italic" size="16.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="UpdatePass_password" layoutX="50.0" layoutY="225.0" prefHeight="49.0" prefWidth="353.0" promptText="set a new password">
+               <font>
+                  <Font name="System Italic" size="16.0" />
+               </font>
+            </PasswordField>
+            <Label layoutX="50.0" layoutY="86.0" prefHeight="37.0" prefWidth="131.0" text="Username" textFill="#070707">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="50.0" layoutY="188.0" prefHeight="37.0" prefWidth="131.0" text="Password" textFill="#070707">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Hyperlink fx:id="UpdatePass_logInToYourAccHyperLink" layoutX="264.0" layoutY="488.0" onAction="#UpdatePass_logInToYourAccHyperLinkOnClick" text="LogIn to your account" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Hyperlink>
+            <Hyperlink fx:id="UpdatePass_createNewAccHyperLink" layoutX="225.0" layoutY="530.0" onAction="#UpdatePass_createNewAccHyperLink" text="Create a new account" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Hyperlink>
+            <Label layoutX="50.0" layoutY="494.0" text="Remembered your password ?" textFill="#070707">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="50.0" layoutY="536.0" text="Don't have an account ?" textFill="#070707">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="UpdatePass_confirmPassword" layoutX="50.0" layoutY="323.0" prefHeight="49.0" prefWidth="353.0" promptText="confirm password">
+               <font>
+                  <Font name="System Italic" size="16.0" />
+               </font>
+            </PasswordField>
+            <Label layoutX="50.0" layoutY="286.0" prefHeight="37.0" prefWidth="160.0" text="Confirm Password" textFill="#070707">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="UpdatePass_searchAccBtn" layoutX="409.0" layoutY="124.0" mnemonicParsing="false" onAction="#UpdatePass_searchAccBtnOnClick" prefHeight="49.0" prefWidth="84.0" style="-fx-background-color: SpringGreen;" text="Search">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Button>
+            <Label fx:id="UpdatePass_invalidUsernameLabel" layoutX="279.0" layoutY="123.0" prefHeight="49.0" prefWidth="124.0" text="Invalid username !" visible="false">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Button fx:id="UpdatePass_updatePasswordBtn" layoutX="50.0" layoutY="421.0" mnemonicParsing="false" onAction="#UpdatePass_updatePasswordBtnOnClick" prefHeight="49.0" prefWidth="353.0" style="-fx-background-color: SpringGreen;" text="Update Password" textFill="#070707">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font></Button>
+            <Label fx:id="UpdatePass_passwordsDoNotMatchLabel" layoutX="151.0" layoutY="378.0" prefHeight="37.0" prefWidth="164.0" text="Passwords do not match" visible="false">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,112 @@
+.glow-subtle {
+    -fx-effect: dropshadow(gaussian, #ffffff, 10, 0.3, 0, 0);
+}
+
+
+/* ------------------------------------------------------------------ */
+.progress-bar {
+    -fx-background-color: #2e2e2e;
+    -fx-background-insets: 0, 1;
+    -fx-background-radius: 5;
+    -fx-padding: 0;
+    -fx-border-radius: 5;
+}
+
+.progress-bar .bar {
+    -fx-background-color: #ffffff; /* Progress color */
+    -fx-background-radius: 5;
+    -fx-effect: dropshadow(gaussian, #ffffff, 10, 0.3, 0, 0);
+}
+
+/* Smooth animation for progress */
+.progress-bar .bar {
+    -fx-transition: width 0.3s ease-in-out;
+}
+
+/* Progress bar track */
+.progress-bar .track {
+    -fx-background-color: #555555; /* Track color */
+    -fx-background-radius: 5;
+    -fx-padding: 0;
+}
+
+/* ------------------------------------------------------------------ */
+.border-pane-left, .border-pane-top, .border-pane-bottom {
+    -fx-border-color: #ddd;
+    -fx-border-width: 2;
+    -fx-border-radius: 8px;
+    -fx-padding: 10px;
+}
+
+
+
+/* ------------------------------------------------------------------ */
+
+.table-view {
+    -fx-background-color: #708090;
+    -fx-border-color: #ddd;
+    -fx-border-width: 1;
+    -fx-background-radius: 8px;
+    -fx-padding: 10px;
+}
+
+.table-view .column-header {
+    -fx-background-color: #708090;
+    -fx-text-fill: Black;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+    -fx-padding: 8px;
+}
+
+/* Table Cells Styling */
+.table-view .table-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: #333;
+    -fx-font-size: 14px;
+    -fx-padding: 8px 10px;
+    -fx-alignment: center-left;
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-background-radius: 5px; /* Rounded corners */
+}
+
+/* Table Header Hover Effect */
+.table-view .column-header:hover {
+    -fx-background-color: #87CEEB;
+}
+
+.table-view .table-row-cell:hover {
+    -fx-background-color: #ADD8E6;
+    -fx-cursor: hand;
+    -fx-opacity: 0.8; /* Slight opacity change */
+}
+
+/* Selection Styling */
+.table-view .table-row-cell:selected {
+    -fx-background-color: #ADD8E6;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+/* Alternate Row Hover Effect */
+.table-view .table-row-cell:selected:hover {
+    -fx-background-color: #87CEEB;
+}
+
+/* Table Scroll Pane */
+.table-view .viewport {
+    -fx-background-color: transparent;
+    -fx-padding: 5px;
+}
+
+.table-view .scroll-bar {
+    -fx-background-color: #B0C4DE; /* Light background color for the scrollbar */
+    -fx-border-radius: 10px; /* Rounded scrollbar edges */
+}
+
+.table-view .scroll-bar .thumb {
+    -fx-background-color: #708090; /* Blue color for the thumb */
+    -fx-border-radius: 10px; /* Rounded thumb edges */
+}
+
+/* ------------------------------------------------------------------ */
